@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, FlatList, Text} from 'react-native';
+import { Text, View, ScrollView, FlatList } from 'react-native';
 import { ListItem, Card } from 'react-native-elements';
 
 class Contact extends Component {
