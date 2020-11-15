@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Text, View, ScrollView, FlatList } from 'react-native';
+import { View, FlatList, Text} from 'react-native';
 import { ListItem, Card } from 'react-native-elements';
+import * as Animatable from 'react-native-animatable';
+
 
 class Contact extends Component {
 
@@ -18,6 +20,7 @@ class Contact extends Component {
     render(){
 
     return(
+        <Animatable.View animation="fadeInDown" duration={2000} delay={1000}>                
         <Card title="Contact Information">
             <Text style={{  padding: 10, lineHeight:30 }}>
                 121, Clear Water Bay Road{"\n"}
@@ -28,6 +31,7 @@ class Contact extends Component {
                 Email:confusion@food.net{"\n"}
             </Text>
         </Card>
+         </Animatable.View>
     )
 
     }
