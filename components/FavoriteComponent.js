@@ -14,7 +14,7 @@ const mapStateToProps = state => {
       dishes: state.dishes,
       favorites: state.favorites
     }
-  }
+}
 
 const mapDispatchToProps = dispatch => ({
     deleteFavorite: (dishId) => dispatch(deleteFavorite(dishId))
@@ -53,7 +53,6 @@ class Favorites extends Component {
                             ],
                             { cancelable: false }
                         );
-                        
                     }
                 }
             ];
